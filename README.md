@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+# Projeto HávFinder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Visão Geral
 
-## Available Scripts
+Bem-vindo ao projeto HávFinder! Esta é uma aplicação web baseada em React desenvolvida como um teste para a empresa Hávira. A aplicação fornece uma tabela de usuários, um mapa para localizar usuários, um filtro de usuários e um formulário para cadastrar novos usuários. O projeto utiliza várias tecnologias e bibliotecas modernas, incluindo React 18, Chakra UI, Redux, Leaflet, Axios e Docker.
 
-In the project directory, you can run:
+## Índice
+
+- [Primeiros Passos](#primeiros-passos)
+- [Scripts Disponíveis](#scripts-disponíveis)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Funcionalidades](#funcionalidades)
+- [Implantação](#implantação)
+- [Saiba Mais](#saiba-mais)
+
+## Primeiros Passos
+
+### Pré-requisitos
+
+Certifique-se de ter o seguinte instalado:
+
+- Node.js (versão 14.x ou superior)
+- npm (versão 6.x ou superior)
+- Docker (para containerização)
+
+### Instalação
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/seuusuario/havfinder.git
+cd havfinder
+```
+
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Inicie o servidor de desenvolvimento:
+
+```bash
+npm start
+```
+
+Abra [http://localhost:3000](http://localhost:3000) para visualizar a aplicação no seu navegador. A página será recarregada quando você fizer alterações. Você também poderá ver quaisquer erros de lint no console.
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Executa a aplicação no modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-la no seu navegador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A página será recarregada quando você fizer alterações. Você também poderá ver quaisquer erros de lint no console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia o executor de testes no modo de observação interativa. Consulte a seção sobre execução de testes para mais informações.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Compila a aplicação para produção na pasta `build`. Empacota corretamente o React no modo de produção e otimiza a compilação para o melhor desempenho.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A compilação é minificada e os nomes dos arquivos incluem os hashes. Sua aplicação está pronta para ser implantada!
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Nota: esta é uma operação sem volta. Uma vez que você ejetar, não poderá voltar atrás!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Se você não estiver satisfeito com a ferramenta de construção e as escolhas de configuração, você pode ejetar a qualquer momento. Este comando removerá a dependência única de construção do seu projeto.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Em vez disso, copiará todos os arquivos de configuração e as dependências transitivas (webpack, Babel, ESLint, etc.) diretamente para o seu projeto para que você tenha controle total sobre eles. Todos os comandos, exceto ejetar, ainda funcionarão, mas apontarão para os scripts copiados para que você possa modificá-los. A partir deste ponto, você estará por conta própria.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Você nunca precisa usar eject. O conjunto de recursos curados é adequado para pequenos e médios deployments, e você não deve se sentir obrigado a usar esse recurso. No entanto, entendemos que esta ferramenta não seria útil se você não pudesse personalizá-la quando estiver pronto.
 
-## Learn More
+## Estrutura do Projeto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+public/
+src/
+  components/
+    Header.js
+    UserForm.js
+    UserTable.js
+    UserMap.js
+  store/
+    index.js
+  App.js
+  index.js
+Dockerfile
+package.json
+README.md
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tecnologias Utilizadas
 
-### Code Splitting
+- **React 18**: Uma biblioteca JavaScript para construir interfaces de usuário.
+- **Chakra UI**: Uma biblioteca de componentes simples, modular e acessível para React.
+- **Redux**: Um contêiner de estado previsível para aplicativos JavaScript.
+- **Leaflet**: Uma biblioteca JavaScript de código aberto para mapas interativos amigáveis para dispositivos móveis.
+- **Axios**: Um cliente HTTP baseado em promessas para o navegador e Node.js.
+- **Docker**: Um conjunto de produtos de plataforma como serviço que usam virtualização a nível de sistema operacional para entregar software em pacotes chamados contêineres.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Funcionalidades
+- **Tabela de Usuários**: Exibe uma lista de usuários com seus detalhes.
+- **Mapa de Usuários**: Mostra as localizações dos usuários em um mapa interativo usando Leaflet.
+- **Filtro de Usuários**: Permite filtrar os usuários com base em diferentes critérios.
+- **Formulário de Usuários**: Permite a adição de novos usuários à lista.
 
-### Analyzing the Bundle Size
+## Implantação
+**Para implantar o projeto usando Docker**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+***Construa a imagem Docker***:
 
-### Making a Progressive Web App
+```
+docker build -t havfinder .
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+***Execute o contêiner Docker***:
 
-### Advanced Configuration
+```
+docker run -p 3000:3000 havfinder
+```
+***Abra http://localhost:3000 para visualizar a aplicação.***
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Para obter mais informações detalhadas sobre a implantação, consulte a documentação de implantação do Create React App.
 
-### Deployment
+Saiba Mais
+Você pode aprender mais na documentação do Create React App.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Para aprender React, consulte a documentação do React.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Para configuração avançada, consulte a configuração avançada do Create React App.
