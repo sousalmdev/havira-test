@@ -29,7 +29,7 @@ Certifique-se de ter o seguinte instalado:
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seuusuario/havfinder.git
+git clone https://github.com/sousalmdev/havfinder.git
 cd havfinder
 ```
 
