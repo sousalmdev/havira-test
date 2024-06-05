@@ -7,8 +7,8 @@ export const Header = () => {
   return (
     <div className="w-full z-50 shadow-md absolute flex justify-center top-0 py-3 bg-havGreen">
       <header className="w-11/12 flex justify-between items-center">
-       <div className="flex items-center gap-2"> <img src={hav} alt="hav" className="w-22 h-16" />
-        <h1 className="text-4xl font-semibold text-black">HávFinder</h1></div>
+       <div className="flex items-center gap-2"> <img src={hav} alt="hav" className="2xl:w-22 2xl:h-16 w-16 h-12" />
+        <h1 className="2xl:text-4xl text-2xl font-semibold text-black">HávFinder</h1></div>
         <HStack
             as="nav"
             spacing={4}
