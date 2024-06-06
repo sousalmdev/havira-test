@@ -6,7 +6,7 @@ import { Button } from "@chakra-ui/react";
 
 export const UserForm = () => {
   const addUser = useStore((state) => state.addUser);
-  const [isSubmitting, setIsSubmitting] = useState(false); 
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const formik = useFormik({
     initialValues: {
@@ -29,15 +29,20 @@ export const UserForm = () => {
         addUser(values);
         formik.resetForm();
         setIsSubmitting(false);
-      }, 1000); 
+      }, 1000);
     },
   });
 
   return (
-    <div id="form" className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-t from-havGreen/40 to-transparent py-20">
-      <div className="bg-user w-full"><h1 className="w-full bg-black/20 backdrop-blur-sm font-semibold py-10 md:py-20 md:text-6xl text-3xl text-center text-white">
-        Cadastre seu usuário
-      </h1></div>
+    <div
+      id="form"
+      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-t from-havGreen/40 to-transparent py-20"
+    >
+      <div className="bg-user w-full">
+        <h1 className="w-full bg-black/20 backdrop-blur-sm font-semibold py-10 md:py-20 md:text-6xl text-3xl text-center text-white">
+          Cadastre seu usuário
+        </h1>
+      </div>
       <form
         onSubmit={formik.handleSubmit}
         className="mt-10 sm:w-8/12 w-11/12 text-white bg-black/50 rounded-lg shadow-md p-6 space-y-4"

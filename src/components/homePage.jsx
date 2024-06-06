@@ -35,10 +35,9 @@ const HomePage = () => {
     <>
       <Header />
       <div className="pt-36 space-y-8">
-   
         <UserList users={users} />
         <UserMap users={users} />
-        <UserForm/>
+        <UserForm />
       </div>
     </>
   );

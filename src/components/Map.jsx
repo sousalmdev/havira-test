@@ -13,7 +13,7 @@ L.Icon.Default.mergeOptions({
 const UserMap = ({ users }) => {
   return (
     <div className="py-60 flex flex-col items-center justify-center">
-    <div className="bg-user w-full"><h1 className="w-full bg-black/20 backdrop-blur-sm font-semibold py-10 md:py-20 md:text-6xl text-3xl text-center text-white">
+    <div className="bg-user w-full"><h1 className="w-full bg-black/20 backdrop-blur-sm font-semibold py-5 md:py-20 md:text-6xl text-3xl text-center text-white">
         Localização de Usuários
       </h1></div>
     <div id="mapa" className="w-full mt-32 items-center flex justify-center">

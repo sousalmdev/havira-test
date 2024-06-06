@@ -1,9 +1,9 @@
 import {create} from 'zustand';
 
-const useStore = create(set => ({
+const useUserStore = create((set) => ({
   users: [],
-  addUser: (user) => set(state => ({ users: [...state.users, { id: state.users.length + 1, ...user }] })),
-  setUsers: (users) => set(() => ({ users })),
+  addUser: (user) => set((state) => ({ users: [...state.users, user] })),
+  setUsers: (users) => set({ users }),
 }));
 
-export default useStore;
+export default useUserStore;
