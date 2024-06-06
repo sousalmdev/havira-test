@@ -5,8 +5,7 @@ import { Header } from "./Header";
 import { UserForm } from "./Form";
 import UserList from "./userList";
 import { setUsers } from "../store";
-import { Button, Link } from "@chakra-ui/react";
-import { FaArrowCircleUp } from "react-icons/fa";
+
 const HomePage = () => {
   const dispatch = useDispatch();
   const users = useSelector((state) => state.users);
