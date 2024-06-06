@@ -1,14 +1,15 @@
 import React, { useEffect } from "react";
-
-import UserList from "./userList";
-import UserMap from "./Map";
+import { useDispatch, useSelector } from "react-redux";
 import { getUsers } from "../services/api/api";
-import useStore from "../store";
 import { Header } from "./Header";
 import { UserForm } from "./Form";
-
+import UserList from "./userList";
+import { setUsers } from "../store";
+import { Button, Link } from "@chakra-ui/react";
+import { FaArrowCircleUp } from "react-icons/fa";
 const HomePage = () => {
-  const { users, setUsers } = useStore();
+  const dispatch = useDispatch();
+  const users = useSelector((state) => state.users);
 
   useEffect(() => {
     getUsers().then((response) => {
@@ -27,17 +28,17 @@ const HomePage = () => {
         lng: parseFloat(user.address.geo.lng),
       }));
 
-      setUsers(formattedUsers);
+      dispatch(setUsers(formattedUsers));
     });
-  }, [setUsers]);
+  }, [dispatch]);
 
   return (
     <>
       <Header />
-      <div className="pt-36 space-y-8">
+      <div className="min-h-screen space-y-8">
         <UserList users={users} />
-        <UserMap users={users} />
         <UserForm />
+      
       </div>
     </>
   );

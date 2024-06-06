@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import useStore from "../store";
-import { Button } from "@chakra-ui/react";
+import { useDispatch } from "react-redux";
+import { addUser } from "../store";
+import { Button, useToast } from "@chakra-ui/react";
 
 export const UserForm = () => {
-  const addUser = useStore((state) => state.addUser);
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const dispatch = useDispatch();
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const toast = useToast();
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -26,9 +28,19 @@ export const UserForm = () => {
     onSubmit: (values) => {
       setIsSubmitting(true);
       setTimeout(() => {
-        addUser(values);
+        dispatch(addUser(values));
         formik.resetForm();
         setIsSubmitting(false);
+
+        setTimeout(() => {
+          toast({
+            title: "Usuário cadastrado com sucesso.",
+            description: "Criamos seu usuário.",
+            status: "success",
+            duration: 9000,
+            isClosable: true,
+          });
+        });
       }, 1000);
     },
   });
