@@ -19,11 +19,11 @@ export const UserForm = () => {
       lng: "",
     },
     validationSchema: Yup.object({
-      name: Yup.string().required("Required"),
-      email: Yup.string().email("Invalid email").required("Required"),
-      city: Yup.string().required("Required"),
-      lat: Yup.number().required("Required"),
-      lng: Yup.number().required("Required"),
+      name: Yup.string().required("Obrigatório."),
+      email: Yup.string().email("Invalid email").required("Obrigatório."),
+      city: Yup.string().required("Obrigatório."),
+      lat: Yup.number().required("Apenas números."),
+      lng: Yup.number().required("Apenas números."),
     }),
     onSubmit: (values) => {
       setIsSubmitting(true);

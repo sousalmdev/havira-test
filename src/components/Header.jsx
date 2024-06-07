@@ -9,7 +9,7 @@ import {
   Divider
 } from "@chakra-ui/react";
 import hav from "./img/Component 65.png";
-import { ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
+import {  HamburgerIcon } from "@chakra-ui/icons";
 
 export const Header = () => {
   return (
