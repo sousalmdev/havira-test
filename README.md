@@ -125,16 +125,19 @@ README.md
 ## Implantação
 **Para implantar o projeto usando Docker**:
 
-***Construa a imagem Docker***:
+## Como Usar a Imagem Docker do Docker Hub
 
-```
-docker build -t havfinder .
+Se você prefere usar a imagem Docker disponível no Docker Hub, siga estas instruções:
 
-```
+1. Puxe a imagem do Docker Hub:
+
+   ```sh
+   docker pull leosousadev/task-react
+   ``` 
 ***Execute o contêiner Docker***:
 
 ```
-docker run -p 3000:3000 havfinder
+docker run -p 3000:3000 leosousadev/task-react
 ```
 ***Abra http://localhost:3000 para visualizar a aplicação.***
 
