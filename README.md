@@ -84,20 +84,23 @@ Você nunca precisa usar eject. O conjunto de recursos curados é adequado para 
 public/
 src/
   components/
-  img/
-  Component 65.png
-
     Header.jsx
+    Footer.jsx
+    HeroSec.jsx
+    LoadingScreen.jsx
     UserForm.jsx
     UserTable.jsx
     UserMap.jsx
     homePage.jsx
+  img/
+    Component 65.png
+    havira-espiral.jpg
+    logo-havira 1.png
   fonts/
-  ClashGrotesk.ttf
+    ClashGrotesk.ttf
   services/
-  api/
-  api.js
-
+    api/
+      api.js
   store.js
   App.js
   index.js
@@ -105,6 +108,7 @@ Dockerfile
 docker-compose.yml
 package.json
 README.md
+
 ```
 
 ## Tecnologias Utilizadas
