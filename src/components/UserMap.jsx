@@ -12,11 +12,11 @@ L.Icon.Default.mergeOptions({
 
 const UserMap = ({ users }) => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
+    <div id="mapa" className="sm:min-h-screen flex flex-col items-center justify-center">
     <div className="bg-user w-full"><h1 className="w-full bg-black/20 backdrop-blur-sm font-semibold py-5 md:py-20 md:text-6xl text-3xl text-center text-white">
         Localização de Usuários
       </h1></div>
-    <div id="mapa" className="w-full mt-32 items-center flex justify-center">
+    <div  className="w-full pt-20 my-auto items-center flex justify-center">
       <MapContainer center={[0, 0]} zoom={3} className="h-96 w-11/12">
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         {users.map((user) => (

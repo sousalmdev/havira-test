@@ -48,7 +48,7 @@ export const UserForm = () => {
   return (
     <div
       id="form"
-      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-t from-havGreen/40 to-transparent py-20"
+      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-t from-havGreen/40 to-transparent pb-44"
     >
       <div className="bg-user w-full">
         <h1 className="w-full bg-black/20 backdrop-blur-sm font-semibold py-10 md:py-20 md:text-6xl text-3xl text-center text-white">

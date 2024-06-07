@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getUsers } from "../services/api/api";
 import { Header } from "./Header";
-import { UserForm } from "./Form";
+import { UserForm } from "./UserForm";
 import UserList from "./userList";
 import { setUsers } from "../store";
 
@@ -34,7 +34,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <div className="min-h-screen space-y-8">
+      <div className="min-h-screen scroll-smooth space-y-8">
         <UserList users={users} />
         <UserForm />
       

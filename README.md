@@ -84,15 +84,25 @@ Você nunca precisa usar eject. O conjunto de recursos curados é adequado para 
 public/
 src/
   components/
-    Header.js
-    UserForm.js
-    UserTable.js
-    UserMap.js
-  store/
-    index.js
+  img/
+  Component 65.png
+
+    Header.jsx
+    UserForm.jsx
+    UserTable.jsx
+    UserMap.jsx
+    homePage.jsx
+  fonts/
+  ClashGrotesk.ttf
+  services/
+  api/
+  api.js
+
+  store.js
   App.js
   index.js
 Dockerfile
+docker-compose.yml
 package.json
 README.md
 ```
