@@ -48,9 +48,9 @@ export const UserForm = () => {
   return (
     <div
       id="form"
-      className="flex flex-col items-center justify-center min-h-screen  pb-44"
+      className="flex flex-col items-center justify-center md:min-h-screen  pb-44"
     >
-      <div className="bg-hav md:h-48 bg-center bg-cover w-full">
+      <div className="bg-hav bg-center bg-cover w-full">
         <h1 className="w-full bg-black/20 backdrop-blur-sm font-semibold py-10 md:py-20 md:text-6xl text-3xl text-center text-white">
           Cadastre seu usuário
         </h1>

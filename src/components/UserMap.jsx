@@ -14,7 +14,7 @@ const UserMap = ({ users }) => {
   return (
     <div
       id="mapa"
-      className="min-h-screen pt-20 flex flex-col items-center justify-center"
+      className="md:min-h-screen pt-20 flex flex-col items-center justify-center"
     >
       <div className="bg-hav bg-center bg-cover w-full">
         <h1 className="w-full bg-black/20 backdrop-blur-sm font-semibold py-5 md:py-20 md:text-6xl text-3xl text-center text-white">
