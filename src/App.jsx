@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HeroSection from "./components/heroSec";
 import HomePage from "./components/homePage";
 import LoadingScreen from "./components/LoadingScreen";
+import Footer from "./components/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,6 +25,7 @@ function App() {
             <Route path="/home" element={<HomePage />} />
           </Routes>
         )}
+        <Footer/>
       </div>
     </Router>
   );
