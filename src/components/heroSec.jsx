@@ -24,11 +24,11 @@ export const HeroSection = () => {
               Acessibilidade e segurança, o que você mais precisa, e o que mais
               temos.
             </p>
-            <a href="/home">
+          
             <button className="bg-white text-black font-semibold sm:w-1/2 w-11/12 p-3 rounded hover:bg-havGreen hover:text-white transition">
-              Começar Agora
+                <a href="/home"> Começar Agora   </a>
             </button>
-            </a>
+         
           </div>
         </div>
       </div>
