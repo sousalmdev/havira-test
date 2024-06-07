@@ -10,10 +10,11 @@ import {
 } from "@chakra-ui/react";
 import hav from "./img/Component 65.png";
 import {  HamburgerIcon } from "@chakra-ui/icons";
+import { FaHome, FaMap, FaPencilAlt, FaTable } from "react-icons/fa";
 
 export const Header = () => {
   return (
-    <div className="w-full z-50 h-24 shadow-md absolute flex justify-center top-0 bg-havGreen">
+    <div className="w-full z-50 h-24 shadow-md fixed flex justify-center top-0 bg-havGreen">
       <header className="w-11/12 flex justify-between items-center">
         <div className="flex items-center">
    
@@ -79,41 +80,52 @@ export const Header = () => {
               colorScheme="white"
               color={"black"}
               variant={"ghost"}
-              size={"lg"}
+              size={'lg'}
               as={Button}
               
             >
-             <HamburgerIcon/>
+             <HamburgerIcon className="text-2xl"/>
             </MenuButton>
          
             <MenuList
               className="border shadow-md border-black"
             >
               <MenuItem
-
+                paddingBottom={3}
                 color={"black"}
                 onClick={() =>
                   document.getElementById("tabela").scrollIntoView()
                 }
+                icon={<FaTable/>}
               >
                 Tabela
               </MenuItem>
               <Divider />
               <MenuItem
-
+                icon={<FaMap/>}
                 color={"black"}
+                paddingBlock={3}
                 onClick={() => document.getElementById("mapa").scrollIntoView()}
               >
                 Mapa
               </MenuItem>
               <Divider />
               <MenuItem
-
+                paddingBlock={3}
                 color={"black"}
                 onClick={() => document.getElementById("form").scrollIntoView()}
+                icon={<FaPencilAlt/>}
               >
                 Formulário
               </MenuItem>
+              <Divider />
+               <a href="/">  <MenuItem
+                paddingTop={3}
+                color={"black"}
+                icon={<FaHome/>}
+              >
+             Voltar ao menu  
+              </MenuItem></a>
             </MenuList>
           </Menu>
         </div>

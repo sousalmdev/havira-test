@@ -29,8 +29,8 @@ Certifique-se de ter o seguinte instalado:
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/sousalmdev/havfinder.git
-cd havfinder
+git clone https://github.com/sousalmdev/havira-test.git
+cd task-react
 ```
 
 2. Instale as dependências:
@@ -123,18 +123,16 @@ README.md
 - **Formulário de Usuários**: Permite a adição de novos usuários à lista.
 
 ## Implantação
-**Para implantar o projeto usando Docker**:
+**Para visualizar o projeto usando Docker**:
 
 ## Como Usar a Imagem Docker do Docker Hub
-
-Se você prefere usar a imagem Docker disponível no Docker Hub, siga estas instruções:
 
 1. Puxe a imagem do Docker Hub:
 
    ```sh
    docker pull leosousadev/task-react
    ``` 
-***Execute o contêiner Docker***:
+2. Execute o contêiner Docker:
 
 ```
 docker run -p 3000:3000 leosousadev/task-react

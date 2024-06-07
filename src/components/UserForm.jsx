@@ -48,9 +48,9 @@ export const UserForm = () => {
   return (
     <div
       id="form"
-      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-t from-havGreen/40 to-black pb-44"
+      className="flex flex-col items-center justify-center min-h-screen  pb-44"
     >
-      <div className="bg-user w-full">
+      <div className="bg-hav md:h-48 bg-center bg-cover w-full">
         <h1 className="w-full bg-black/20 backdrop-blur-sm font-semibold py-10 md:py-20 md:text-6xl text-3xl text-center text-white">
           Cadastre seu usuário
         </h1>
@@ -133,7 +133,8 @@ export const UserForm = () => {
           type="submit"
           isLoading={isSubmitting}
           loadingText="Submitting"
-          colorScheme="green"
+          backgroundColor={'#88E771'}
+          _hover={{backgroundColor:'#45713a',color:'white'}}
           variant="solid"
           className="w-full"
         >
