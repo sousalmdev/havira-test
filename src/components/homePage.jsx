@@ -5,6 +5,7 @@ import { Header } from "./Header";
 import { UserForm } from "./UserForm";
 import UserList from "./userList";
 import { setUsers } from "../store";
+import Footer from "./Footer";
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -37,7 +38,7 @@ const HomePage = () => {
       <div className="min-h-screen scroll-smooth space-y-8">
         <UserList users={users} />
         <UserForm />
-      
+        <Footer/>
       </div>
     </>
   );
