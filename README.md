@@ -129,8 +129,6 @@ README.md
 
 ## Para visualizar o projeto usando Docker:
 
-** Como Usar a Imagem Docker do Docker Hub ** :
-
 1. Puxe a imagem do Docker Hub:
 
    ```sh
