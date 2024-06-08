@@ -113,20 +113,21 @@ README.md
 
 ## Tecnologias Utilizadas
 
-- **React 18**: Uma biblioteca JavaScript para construir interfaces de usuário.
-- **Chakra UI**: Uma biblioteca de componentes simples, modular e acessível para React.
-- **Redux**: Um contêiner de estado previsível para aplicativos JavaScript.
-- **Leaflet**: Uma biblioteca JavaScript de código aberto para mapas interativos amigáveis para dispositivos móveis.
-- **Axios**: Um cliente HTTP baseado em promessas para o navegador e Node.js.
-- **Docker**: Um conjunto de produtos de plataforma como serviço que usam virtualização a nível de sistema operacional para entregar software em pacotes chamados contêineres.
+- ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white): Uma biblioteca JavaScript para construir interfaces de usuário.
+- ![Chakra UI](https://img.shields.io/badge/Chakra%20UI-1.6.6-319795?logo=chakraui&logoColor=white): Uma biblioteca de componentes simples, modular e acessível para React.
+- ![Redux](https://img.shields.io/badge/Redux-4-764ABC?logo=redux&logoColor=white): Um contêiner de estado previsível para aplicativos JavaScript.
+- ![Leaflet](https://img.shields.io/badge/Leaflet-1.7.1-199900?logo=leaflet&logoColor=white): Uma biblioteca JavaScript de código aberto para mapas interativos amigáveis para dispositivos móveis.
+- ![Axios](https://img.shields.io/badge/Axios-0.21.1-5A29E4?logo=axios&logoColor=white): Um cliente HTTP baseado em promessas para o navegador e Node.js.
+- ![Docker](https://img.shields.io/badge/Docker-20.10.7-2496ED?logo=docker&logoColor=white): Um conjunto de produtos de plataforma como serviço que usam virtualização a nível de sistema operacional para entregar software em pacotes chamados contêineres.
+- ![React Router DOM](https://img.shields.io/badge/React%20Router%20DOM-6.0-CA4245?logo=reactrouter&logoColor=white): Uma biblioteca para gerenciamento de rotas em aplicações React.
 
 ## Funcionalidades
+
 - **Tabela de Usuários**: Exibe uma lista de usuários com seus detalhes.
 - **Mapa de Usuários**: Mostra as localizações dos usuários em um mapa interativo usando Leaflet.
 - **Filtro de Usuários**: Permite filtrar os usuários com base em diferentes critérios.
 - **Formulário de Usuários**: Permite a adição de novos usuários à lista.
 
-## Implantação
 **Para visualizar o projeto usando Docker**:
 
 ## Como Usar a Imagem Docker do Docker Hub
