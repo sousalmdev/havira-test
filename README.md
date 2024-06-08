@@ -127,9 +127,9 @@ README.md
 - **Filtro de Usuários**: Permite filtrar os usuários com base em diferentes critérios.
 - **Formulário de Usuários**: Permite a adição de novos usuários à lista.
 
-**Para visualizar o projeto usando Docker**:
+## Para visualizar o projeto usando Docker:
 
-## Como Usar a Imagem Docker do Docker Hub
+** Como Usar a Imagem Docker do Docker Hub ** :
 
 1. Puxe a imagem do Docker Hub:
 
